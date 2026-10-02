@@ -14,8 +14,9 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with: { gradle-version: "8.7" }
       - run: npm install && npm test && npm run build:android-assets
-      - run: gradle -p android assembleDebug
+        working-directory: shieldguard
+      - run: gradle -p shieldguard/android assembleDebug
       - uses: actions/upload-artifact@v4
         with:
           name: shieldguard-debug-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: shieldguard/android/app/build/outputs/apk/debug/app-debug.apk
