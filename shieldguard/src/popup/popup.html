@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="color-scheme" content="light dark" />
+  <title>ShieldGuard</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup" id="app">
+    <header class="brand-row">
+      <img src="icons/icon32.png" alt="" class="brand-logo" />
+      <div class="brand-text">
+        <span class="brand-name">ShieldGuard</span>
+        <span class="brand-status" id="statusPill">🟢 PROTECTED</span>
+      </div>
+    </header>
+
+    <div class="site-row">
+      <span class="site-label" id="siteLabelText">Current website</span>
+      <span class="site-domain" id="siteDomain">—</span>
+    </div>
+
+    <button class="main-switch" id="mainSwitch" aria-pressed="true">
+      <span id="mainSwitchLabel">PROTECTION ON</span>
+    </button>
+
+    <ul class="category-list" id="categoryList" role="list">
+      <li class="category-row" data-key="popups">
+        <span class="cat-label">Popup Protection</span>
+        <button class="toggle" role="switch" aria-checked="true"><span class="knob"></span></button>
+      </li>
+      <li class="category-row" data-key="redirects">
+        <span class="cat-label">Redirect Protection</span>
+        <button class="toggle" role="switch" aria-checked="true"><span class="knob"></span></button>
+      </li>
+      <li class="category-row" data-key="ads">
+        <span class="cat-label">Ad Protection</span>
+        <button class="toggle" role="switch" aria-checked="true"><span class="knob"></span></button>
+      </li>
+      <li class="category-row" data-key="trackers">
+        <span class="cat-label">Tracker Protection</span>
+        <button class="toggle" role="switch" aria-checked="true"><span class="knob"></span></button>
+      </li>
+      <li class="category-row" data-key="overlays">
+        <span class="cat-label">Overlay Protection</span>
+        <button class="toggle" role="switch" aria-checked="true"><span class="knob"></span></button>
+      </li>
+    </ul>
+
+    <section class="stats-block">
+      <h2 id="statsHeading">Today's Protection</h2>
+      <div class="stats-grid">
+        <div class="stat"><span class="stat-value" id="statPopups">0</span><span class="stat-label">Popups</span></div>
+        <div class="stat"><span class="stat-value" id="statAds">0</span><span class="stat-label">Ads</span></div>
+        <div class="stat"><span class="stat-value" id="statRedirects">0</span><span class="stat-label">Redirects</span></div>
+        <div class="stat"><span class="stat-value" id="statTrackers">0</span><span class="stat-label">Trackers</span></div>
+      </div>
+    </section>
+
+    <footer class="actions">
+      <button class="btn btn-secondary" id="openControlCenter">Control Center</button>
+      <button class="btn btn-secondary" id="openSettings">Settings</button>
+      <button class="btn btn-primary" id="openUpgrade">Upgrade to Pro</button>
+    </footer>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

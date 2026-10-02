@@ -1,0 +1,7 @@
+[
+  { "id": 1, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||adtrafficquality.google^", "resourceTypes": ["main_frame", "sub_frame"] } },
+  { "id": 2, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||trackredirect.com^", "resourceTypes": ["main_frame", "sub_frame"] } },
+  { "id": 3, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||redirectvoluum.com^", "resourceTypes": ["main_frame", "sub_frame"] } },
+  { "id": 4, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||clickfunnel-redirect.net^", "resourceTypes": ["main_frame", "sub_frame"] } },
+  { "id": 5, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||go2cloud.org^", "resourceTypes": ["main_frame", "sub_frame"] } }
+]

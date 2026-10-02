@@ -1,0 +1,29 @@
+{
+  "note": "Conservative, generic cosmetic selectors for common intrusive overlay patterns. Matches require BOTH a structural signal (fixed/sticky full-viewport positioning) AND a class/id keyword match, to avoid removing legitimate UI like login forms or checkout modals. See src/content/overlay-filter.ts for the matching logic that consumes this list.",
+  "keywordSelectors": [
+    "[class*='popup-overlay']",
+    "[class*='popunder']",
+    "[class*='fake-download']",
+    "[id*='fake-download']",
+    "[class*='sponsored-widget']",
+    "[class*='ad-overlay']",
+    "[class*='interstitial-ad']",
+    "[class*='subscribe-overlay']",
+    "[class*='exit-intent']"
+  ],
+  "protectedSelectors": [
+    "form",
+    "[class*='login']",
+    "[class*='signin']",
+    "[class*='checkout']",
+    "[class*='cart']",
+    "video",
+    "[class*='player']",
+    "nav",
+    "[class*='cookie']",
+    "[class*='consent']",
+    "[class*='comment']",
+    "article",
+    "main"
+  ]
+}

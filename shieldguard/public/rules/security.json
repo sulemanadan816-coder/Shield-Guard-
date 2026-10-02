@@ -1,0 +1,6 @@
+[
+  { "id": 1, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||bestreviews-daily-deals.com^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 2, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||prize-notification.net^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 3, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||system-update-required.info^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 4, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||flash-player-update-now.com^", "resourceTypes": ["main_frame", "sub_frame", "script"] } }
+]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:fitsSystemWindows="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="6dp" android:gravity="center_vertical">
+        <Button android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back" />
+        <EditText android:id="@+id/url" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="Search or enter address" android:inputType="textUri"
+            android:imeOptions="actionGo" android:maxLines="1" android:importantForAutofill="no" />
+        <Button android:id="@+id/shield" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shield ON" />
+    </LinearLayout>
+    <TextView android:id="@+id/stats" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="6dp" android:textSize="12sp" android:text="Blocked: 0 requests" />
+    <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent" android:layout_height="3dp" android:visibility="gone" />
+    <WebView android:id="@+id/web" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+</LinearLayout>

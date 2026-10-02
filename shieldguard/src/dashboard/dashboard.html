@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="color-scheme" content="light dark" />
+  <title>ShieldGuard — Control Center</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <img src="icons/icon32.png" alt="" />
+        <div>
+          <div class="sidebar-title">ShieldGuard</div>
+          <div class="sidebar-tagline">Browse freely. Shield the unwanted.</div>
+        </div>
+      </div>
+      <nav aria-label="Main">
+        <a href="#control-center" data-route="control-center">Control Center</a>
+        <a href="#content-filter" data-route="content-filter">Content Filter</a>
+        <a href="#site-manager" data-route="site-manager">Site Manager</a>
+        <a href="#event-history" data-route="event-history">Event History</a>
+        <a href="#settings" data-route="settings">Settings</a>
+        <a href="#premium" data-route="premium">Premium / Pro</a>
+        <a href="#more" data-route="more">More</a>
+      </nav>
+      <div class="sidebar-footer" id="sidebarPlanBadge">Free Plan</div>
+    </aside>
+    <main class="content" id="content" aria-live="polite">
+      <!-- rendered by dashboard.ts -->
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

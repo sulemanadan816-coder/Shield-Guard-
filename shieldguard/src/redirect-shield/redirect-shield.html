@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="color-scheme" content="light dark" />
+  <title>ShieldGuard — Redirect Shield</title>
+  <link rel="stylesheet" href="redirect-shield.css" />
+</head>
+<body>
+  <main class="shield-card" id="app">
+    <img src="icons/icon48.png" alt="" class="shield-logo" />
+    <h1>Redirect Shield</h1>
+    <p class="lead">This navigation matched a high-confidence redirect-loop pattern, so ShieldGuard paused here instead of handling it silently.</p>
+
+    <div class="detail-box">
+      <p><strong>Requested destination</strong></p>
+      <p class="destination" id="destinationText">—</p>
+      <p><strong>Why ShieldGuard stopped this</strong></p>
+      <ul id="reasonsList"></ul>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-secondary" id="goBackBtn">Go Back</button>
+      <button class="btn btn-secondary" id="continueBtn">Continue</button>
+      <button class="btn btn-primary" id="trustBtn">Trust Site</button>
+    </div>
+    <p class="fine-print">
+      Most suspicious redirects are now handled quietly in the background and never show this
+      page -- you'll only land here for the rare case ShieldGuard judged genuinely ambiguous
+      (a same-site redirect loop) with Quiet Protection Mode turned off. "Continue" opens this
+      destination once. "Trust Site" stops ShieldGuard from protecting this domain going
+      forward -- you can undo this anytime in Site Manager.
+    </p>
+  </main>
+  <script type="module" src="redirect-shield.js"></script>
+</body>
+</html>

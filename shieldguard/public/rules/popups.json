@@ -1,0 +1,10 @@
+[
+  { "id": 1, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||popads.net^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 2, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||popcash.net^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 3, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||propellerads.com^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 4, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||exoclick.com^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 5, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||adcash.com^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 6, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||clickadu.com^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 7, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||popunder.net^", "resourceTypes": ["main_frame", "sub_frame", "script"] } },
+  { "id": 8, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||adsterra.com^", "resourceTypes": ["main_frame", "sub_frame", "script"] } }
+]
